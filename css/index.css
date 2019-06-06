@@ -246,8 +246,20 @@ nav .navigation-links a {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 3%;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 83%;
+  height: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #17A2B8;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: white;
 }
