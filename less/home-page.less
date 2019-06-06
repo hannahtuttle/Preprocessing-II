@@ -1,11 +1,19 @@
 .home {
 
+
   header {
     margin-top: 2.7%;
     padding-bottom: 1.4%;
     border-top: 2px dashed @navigation-border;
     border-bottom: 2px dashed @navigation-border;
 
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        width: 93%;
+        margin-left: 4%;
+      }
+    
     img {
       padding-bottom: 2.7%;
     }
@@ -17,16 +25,37 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile {
+      flex-direction: column;
+      align-content: center;
+      margin-top: 3%;
+      
+    }
+
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 95%;
+        padding-top: 3%;
+        padding-left: 2%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+       width: 95%;
+       height: auto;
+       display: flex;
+       justify-content: center;
+       padding: 0;
+      
+      }
 
       img {
         border-radius: 10px;
@@ -38,20 +67,42 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        width: 95%;
+        padding-top: 3%;
+        padding-left: 2%;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+       }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 90%;
+    }
 
     img {
       border-radius: 10px;
@@ -65,12 +116,33 @@
     justify-content: space-between;
     padding-bottom: 3%;
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 75%;
+        height: 30%;
+      }
+
       .btn {
+
+        @media @mobile{
+          padding-top: 3%;
+          padding-bottom: 3%;
+        }
+
         .button(83%, 19%, @button-bg, center, center);
+
+        @media @mobile {
+          .button(98%, 30%, @button-bg, center, center);
+
+        }
 
       }
     }

@@ -9,6 +9,15 @@ nav {
 
     @media @mobile {
      
+        flex-direction: column;
+        padding-top: 9%;
+        
+    }
+    h1 {
+        @media @mobile {
+            font-size: 3rem;
+            margin-bottom: 2%;
+        }
     }
 
     .navigation-links {
@@ -17,6 +26,12 @@ nav {
         margin-right: 3%;
         display: flex;
         justify-content: space-between;
+
+
+    @media @mobile {
+        width: 80%;
+        margin-bottom: 1%;
+    }
 
         a {
             font-size: 1.6rem;
